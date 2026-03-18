@@ -320,7 +320,7 @@ body.nav-open .nav-toggle-line:last-child {
   inset: 0;
   background: url("assets/nsb-hero-bg.jpg") no-repeat center center;
   background-size: cover;
-  opacity: 0.85;
+  opacity: 1;
   pointer-events: none;
   z-index: -2;
 }
@@ -330,7 +330,7 @@ body.nav-open .nav-toggle-line:last-child {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to right, rgba(2, 6, 23, 0.96), transparent 55%);
+  background: linear-gradient(to right, rgba(2, 6, 23, 0.96), transparent 40%);
   pointer-events: none;
   z-index: -1;
 }
@@ -344,6 +344,11 @@ body.nav-open .nav-toggle-line:last-child {
 
 .hero-copy {
   position: relative;
+}
+
+/* Remove heavy card feel behind hero text */
+.hero-copy::before {
+  content: none;
 }
 
 .hero-copy h1 {
