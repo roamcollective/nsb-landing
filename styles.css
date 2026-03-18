@@ -612,14 +612,16 @@ body.nav-open .nav-toggle-line:last-child {
 .electric-border::before {
   content: "";
   position: absolute;
-  inset: -1px;
+  inset: -2px;
   border-radius: inherit;
   background:
-    radial-gradient(circle at 0 0, rgba(255, 227, 179, 0.9), transparent 60%),
-    conic-gradient(from 200deg, #f39f5a, #ea6113, #ae445a, #fbb931, #f39f5a);
-  opacity: 0.9;
+    radial-gradient(circle at 0 0, rgba(255, 227, 179, 0.95), transparent 60%),
+    conic-gradient(from 200deg, #f88f22, #fbb931, #ea6113, #f39f5a, #f88f22);
+  opacity: 1;
   z-index: -1;
-  filter: drop-shadow(0 0 45px rgba(243, 159, 90, 0.85));
+  filter:
+    drop-shadow(0 0 22px rgba(250, 145, 64, 0.9))
+    drop-shadow(0 0 60px rgba(250, 145, 64, 0.75));
 }
 
 /* Features */
