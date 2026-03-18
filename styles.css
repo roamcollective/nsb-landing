@@ -310,10 +310,10 @@ body.nav-open .nav-toggle-line:last-child {
   overflow: hidden;
   display: flex;
   align-items: center;
-  background: #020617;
+  background: #000;
 }
 
-/* Stadium image */
+/* Stadium image — full strength */
 .hero::before {
   content: "";
   position: absolute;
@@ -322,17 +322,12 @@ body.nav-open .nav-toggle-line:last-child {
   background-size: cover;
   opacity: 1;
   pointer-events: none;
-  z-index: -2;
+  z-index: -1;
 }
 
-/* Left-side dark gradient for text readability */
+/* No overlay so the image is fully visible */
 .hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to right, rgba(2, 6, 23, 0.96), transparent 40%);
-  pointer-events: none;
-  z-index: -1;
+  content: none;
 }
 
 .hero-inner {
