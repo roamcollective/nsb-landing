@@ -5,6 +5,9 @@
   --accent: #00ff41;
   --accent-soft: rgba(0, 255, 65, 0.16);
   --accent-strong: rgba(0, 255, 65, 0.32);
+  --accent-purple: #7c3aed;
+  --accent-purple-soft: rgba(124, 58, 237, 0.18);
+  --accent-purple-strong: rgba(124, 58, 237, 0.4);
   --text: #f9fafb;
   --muted: #9ca3af;
   --muted-soft: #6b7280;
@@ -223,6 +226,31 @@ a:hover {
 .btn-accent:hover {
   background: rgba(0, 255, 65, 0.22);
   border-color: var(--accent);
+}
+
+/* Plan-specific CTA colors */
+.plans-grid .plan-card:nth-child(1) .btn,
+.plans-grid .plan-card:nth-child(2) .btn {
+  background: linear-gradient(135deg, #a855f7, var(--accent-purple));
+  color: #f9fafb;
+  border-color: transparent;
+  box-shadow: 0 14px 45px var(--accent-purple-strong);
+}
+
+.plans-grid .plan-card:nth-child(1) .btn:hover,
+.plans-grid .plan-card:nth-child(2) .btn:hover {
+  box-shadow: 0 18px 50px rgba(124, 58, 237, 0.55);
+}
+
+.plans-grid .plan-card:nth-child(3) .btn {
+  background: linear-gradient(135deg, #00ff7b, var(--accent));
+  color: #020617;
+  border-color: transparent;
+  box-shadow: 0 14px 45px rgba(0, 255, 65, 0.3);
+}
+
+.plans-grid .plan-card:nth-child(3) .btn:hover {
+  box-shadow: 0 18px 50px rgba(0, 255, 65, 0.4);
 }
 
 .btn:active {
@@ -547,6 +575,14 @@ a:hover {
   border-color: rgba(0, 255, 65, 0.7);
   color: var(--accent);
   background: rgba(0, 255, 65, 0.08);
+}
+
+/* Purple labels for Daily & Weekly */
+.plans-grid .plan-card:nth-child(1) .plan-label,
+.plans-grid .plan-card:nth-child(2) .plan-label {
+  border-color: rgba(124, 58, 237, 0.7);
+  color: #e9d5ff;
+  background: var(--accent-purple-soft);
 }
 
 .plan-card p {
