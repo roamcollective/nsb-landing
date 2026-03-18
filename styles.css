@@ -315,16 +315,38 @@ body.nav-open .nav-toggle-line:last-child {
     linear-gradient(to bottom, rgba(2, 6, 23, 0.98), rgba(2, 6, 23, 0.94));
 }
 
-.hero::before,
-.hero::after {
-  content: none;
-}
-
 .hero-inner {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr);
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1.1fr);
   gap: 3rem;
   align-items: center;
+}
+
+.hero-art {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-art img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 26px;
+  border: 1px solid rgba(148, 163, 184, 0.5);
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.9);
+}
+
+@media (max-width: 960px) {
+  .hero-inner {
+    grid-template-columns: minmax(0, 1.2fr);
+  }
+
+  .hero-art {
+    order: -1;
+  }
+
+  .hero-art img {
+    max-width: 100%;
+  }
 }
 
 
