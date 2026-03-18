@@ -370,6 +370,11 @@ body.nav-open .nav-toggle-line:last-child {
   align-items: center;
 }
 
+/* Hide hero media panel now that background carries the art */
+.hero-media {
+  display: none;
+}
+
 .hero-copy {
   position: relative;
 }
