@@ -305,11 +305,12 @@ body.nav-open .nav-toggle-line:last-child {
 
 .hero {
   position: relative;
+  min-height: 100vh;
   padding-top: 4.5rem;
   overflow: hidden;
-  background:
-    radial-gradient(circle at top left, rgba(0, 255, 65, 0.06), transparent 60%),
-    linear-gradient(to bottom, rgba(2, 6, 23, 0.98), rgba(2, 6, 23, 0.94));
+  display: flex;
+  align-items: center;
+  background: #020617;
 }
 
 /* Stadium image */
@@ -317,60 +318,32 @@ body.nav-open .nav-toggle-line:last-child {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("assets/nsb-hero-bg.jpg") no-repeat center right;
+  background: url("assets/nsb-hero-bg.jpg") no-repeat center center;
   background-size: cover;
-  opacity: 0.7;
-  pointer-events: none;
-  z-index: -3;
-}
-
-/* Left-side dark vignette for text readability */
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(to right, rgba(2, 6, 23, 0.96), transparent 55%),
-    radial-gradient(circle at bottom right, rgba(15, 23, 42, 0.8), transparent 65%);
+  opacity: 0.85;
   pointer-events: none;
   z-index: -2;
 }
 
-/* Subtle odds-board grid on the right */
-.hero-grid-overlay {
+/* Left-side dark gradient for text readability */
+.hero::after {
+  content: "";
   position: absolute;
   inset: 0;
+  background: linear-gradient(to right, rgba(2, 6, 23, 0.96), transparent 55%);
   pointer-events: none;
   z-index: -1;
-  background-image:
-    linear-gradient(to right, rgba(148, 163, 184, 0.12) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(148, 163, 184, 0.12) 1px, transparent 1px);
-  background-size: 48px 48px;
-  mask-image: linear-gradient(to left, transparent 20%, rgba(0, 0, 0, 0.9) 60%);
-  opacity: 0.25;
 }
 
 .hero-inner {
   display: grid;
-  grid-template-columns: minmax(0, 1.4fr);
-  gap: 3.2rem;
+  grid-template-columns: minmax(0, 1.2fr);
+  gap: 3rem;
   align-items: center;
 }
 
 .hero-copy {
   position: relative;
-}
-
-.hero-copy::before {
-  content: "";
-  position: absolute;
-  inset: -18px -22px -18px -22px;
-  border-radius: 24px;
-  background:
-    linear-gradient(to bottom right, rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.92));
-  border: 1px solid rgba(31, 41, 55, 0.95);
-  opacity: 0.92;
-  z-index: -1;
 }
 
 .hero-copy h1 {
