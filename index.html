@@ -26,7 +26,11 @@
             class="logo-image"
           />
         </a>
-        <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="nav-toggle-line"></span>
+          <span class="nav-toggle-line"></span>
+        </button>
+        <nav class="main-nav" id="primary-nav" aria-label="Main navigation">
           <a href="#about">What You Get</a>
           <a href="#plans">Membership</a>
           <a href="#testimonials">Results</a>
@@ -446,8 +450,11 @@
       <div class="container footer-inner">
         <div class="footer-branding">
           <div class="logo footer-logo">
-            <span class="logo-mark">NSB</span>
-            <span class="logo-text">No Sweat Bets</span>
+            <img
+              src="assets/nsb-logo.webp"
+              alt="No Sweat Bets logo"
+              class="logo-image"
+            />
           </div>
           <p class="footer-tagline">
             No Sweat Bets is an entertainment and education community for sports
@@ -503,6 +510,16 @@
         const yearSpan = document.getElementById("year");
         if (yearSpan) {
           yearSpan.textContent = new Date().getFullYear().toString();
+        }
+
+        // Mobile nav toggle
+        const navToggle = document.querySelector(".nav-toggle");
+        const body = document.body;
+        if (navToggle) {
+          navToggle.addEventListener("click", () => {
+            const isOpen = body.classList.toggle("nav-open");
+            navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+          });
         }
       </script>
     </footer>
