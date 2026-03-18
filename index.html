@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>No Sweat Bets | Sports Betting Discord Community</title>
+    <title>No Sweat Bets | Cinematic Sports Betting Discord War Room</title>
     <meta
       name="description"
-      content="No Sweat Bets is a private sports betting community for serious bettors. Daily picks, live bets, bankroll education, and a locked-in Discord community."
+      content="No Sweat Bets is a private, cinematic sports betting Discord for serious bettors. Daily edges, live bets, bankroll education, and a disciplined room that treats betting like a business."
     />
+
+    <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="No Sweat Bets | Sports Betting Discord Community" />
     <meta
@@ -15,8 +17,9 @@
       content="Join a private sports betting Discord built for serious bettors – daily edges, live bets, and bankroll guidance."
     />
     <meta property="og:url" content="https://nsb-landing-neon.vercel.app" />
-    <meta property="og:image" content="https://nsb-landing-neon.vercel.app/assets/nsb-astronaut.webp" />
+    <meta property="og:image" content="https://nsb-landing-neon.vercel.app/assets/nsb-hero-art.jpg" />
 
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="No Sweat Bets | Sports Betting Discord Community" />
     <meta
@@ -24,34 +27,37 @@
       content="Private sports betting Discord with real slips, live bets, and bankroll strategy – not a public feed."
     />
     <meta name="twitter:image" content="https://nsb-landing-neon.vercel.app/assets/nsb-hero-art.jpg" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a href="#hero" class="logo">
-          <img
-            src="assets/nsb-logo.webp"
-            alt="No Sweat Bets logo"
-            class="logo-image"
-          />
+        <a href="#hero" class="logo" aria-label="No Sweat Bets home">
+          <img src="assets/nsb-logo.webp" alt="No Sweat Bets logo" class="logo-image" />
         </a>
+
         <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
           <span class="nav-toggle-line"></span>
           <span class="nav-toggle-line"></span>
         </button>
+
         <nav class="main-nav" id="primary-nav" aria-label="Main navigation">
+          <a href="#hero">Overview</a>
           <a href="#about">What You Get</a>
           <a href="#plans">Membership</a>
           <a href="#testimonials">Results</a>
           <a href="#faq">FAQ</a>
         </nav>
+
         <div class="header-cta">
           <a
             class="btn btn-ghost"
@@ -74,109 +80,140 @@
     <main>
       <!-- Hero -->
       <section id="hero" class="section hero">
+        <div class="hero-bg-layer" aria-hidden="true"></div>
         <div class="container hero-inner">
           <div class="hero-copy">
-            <div class="hero-tagline">Private sports betting community</div>
-            <h1>Serious picks for bettors who treat this like a business.</h1>
+            <div class="hero-tagline-pill">
+              <span class="hero-tagline-dot"></span>
+              <span class="hero-tagline-text">Private sports betting war room</span>
+            </div>
+
+            <h1>
+              The Discord where
+              <span class="hero-highlight">the lights stay on</span>
+              long after the book closes.
+            </h1>
+
             <p class="hero-subtitle">
-              No Sweat Bets connects you with proven cappers, real slips, and
-              real results. Daily edges, live bets, and bankroll guidance in a
-              private Discord built for long-term profit.
+              No Sweat Bets is a locked-in betting room for people who treat this like a business.
+              Daily edges, live bets, and real bankroll education – all run out of a cinematic stadium
+              you can tap into from your couch.
             </p>
+
+            <div class="hero-quick-points">
+              <div class="hero-point">Daily cards with clear unit sizing</div>
+              <div class="hero-point">Live bets when game scripts flip</div>
+              <div class="hero-point">Bankroll guidance &amp; discipline, not lotto tickets</div>
+            </div>
 
             <div class="hero-actions">
               <a
-                class="btn btn-primary btn-lg"
+                class="btn btn-primary btn-lg hero-main-cta"
                 href="https://discord.gg/EaHDTP9yes"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Join the Discord</a
               >
+                Enter the Discord
+              </a>
               <a
                 class="btn btn-outline btn-lg"
                 href="https://whop.com/joined/no-sweat-bets-ef/"
                 target="_blank"
                 rel="noopener noreferrer"
-                >View Membership Options</a
               >
+                View membership passes
+              </a>
             </div>
 
-            <div class="hero-stats">
-              <div class="hero-stat">
-                <span class="hero-stat-num">$30K+</span>
-                <span class="hero-stat-label">Biggest single hit</span>
+            <div class="hero-meta">
+              <div class="hero-stats">
+                <div class="hero-stat">
+                  <span class="hero-stat-label">Biggest single hit</span>
+                  <span class="hero-stat-value">$30K+</span>
+                </div>
+                <div class="hero-stat">
+                  <span class="hero-stat-label">Members locked in</span>
+                  <span class="hero-stat-value">339</span>
+                </div>
+                <div class="hero-stat">
+                  <span class="hero-stat-label">Active VIPs</span>
+                  <span class="hero-stat-value">186</span>
+                </div>
               </div>
-              <div class="hero-stat">
-                <span class="hero-stat-num">339</span>
-                <span class="hero-stat-label">Members in Discord</span>
-              </div>
-              <div class="hero-stat">
-                <span class="hero-stat-num">186</span>
-                <span class="hero-stat-label">Active VIPs</span>
-              </div>
-            </div>
 
-            <div class="social-links" aria-label="No Sweat Bets social links">
-              <span class="social-label">Follow the action</span>
-              <div class="social-icons">
-                <a
-                  href="https://www.instagram.com/no.sweat.bets/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="social-icon"
-                  aria-label="No Sweat Bets on Instagram"
-                >
-                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                    <rect
-                      x="3"
-                      y="3"
-                      width="18"
-                      height="18"
-                      rx="5"
-                      ry="5"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                    ></rect>
-                    <circle
-                      cx="12"
-                      cy="12"
-                      r="4.2"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.6"
-                    ></circle>
-                    <circle cx="17" cy="7" r="1.2" fill="currentColor"></circle>
-                  </svg>
-                </a>
-                <a
-                  href="https://x.com/NoSweatBets___"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="social-icon"
-                  aria-label="No Sweat Bets on X (Twitter)"
-                >
-                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                    <path
-                      d="M5 5h4.1l3.1 4.6L15.8 5H19l-5.1 6.7L19.5 19h-4.1l-3.4-4.9L8.2 19H5l5.2-7z"
-                    ></path>
-                  </svg>
-                </a>
+              <div class="hero-social-block">
+                <div class="social-label">Follow the slips</div>
+                <div class="social-icons" aria-label="No Sweat Bets social links">
+                  <a
+                    href="https://www.instagram.com/no.sweat.bets/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-icon"
+                    aria-label="No Sweat Bets on Instagram"
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <rect
+                        x="3"
+                        y="3"
+                        width="18"
+                        height="18"
+                        rx="5"
+                        ry="5"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                      ></rect>
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="4.2"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.6"
+                      ></circle>
+                      <circle cx="17" cy="7" r="1.2" fill="currentColor"></circle>
+                    </svg>
+                  </a>
+                  <a
+                    href="https://x.com/NoSweatBets___"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-icon"
+                    aria-label="No Sweat Bets on X (Twitter)"
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path
+                        d="M5 5h4.1l3.1 4.6L15.8 5H19l-5.1 6.7L19.5 19h-4.1l-3.4-4.9L8.2 19H5l5.2-7z"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="hero-art" aria-hidden="true">
-            <img src="assets/nsb-hero-art.jpg" alt="No Sweat Bets stadium and astronaut" />
+          <div class="hero-media" aria-hidden="true">
+            <div class="hero-media-frame electric-border">
+              <div class="hero-media-inner">
+                <div class="hero-media-label">Inside the No Sweat Bets stadium</div>
+                <img
+                  src="assets/nsb-hero-art.jpg"
+                  alt="No Sweat Bets astronaut in a stadium with neon signage"
+                  class="hero-media-image"
+                />
+                <div class="hero-media-footer">
+                  <span class="hero-media-pill">Live edges • Real slips • No public feed</span>
+                </div>
+              </div>
+            </div>
           </div>
-
         </div>
       </section>
 
-      <!-- Cappers strip -->
-      <section class="section cappers-bar" aria-label="No Sweat Bets cappers">
+      <!-- Marquee of partner cappers -->
+      <section class="section cappers-bar" aria-label="Cappers inside No Sweat Bets">
         <div class="container cappers-inner">
-          <div class="cappers-label">Featured Cappers Inside No Sweat Bets</div>
+          <div class="cappers-label">Cappers you&apos;ll see in the room</div>
           <p class="sr-only">
             Featuring cappers: 2Legit Locks, Deuce 2 Sports, Lotto Stud Sports Betting,
             Anita Max Win Tour, No Sweat Bets, Tee Chain, and more.
@@ -201,92 +238,142 @@
         </div>
       </section>
 
-      <!-- What You Get -->
+      <!-- What you get -->
       <section id="about" class="section section-alt">
+        <div class="section-angle section-angle-top" aria-hidden="true"></div>
         <div class="container">
           <header class="section-header">
-            <h2>What you get inside No Sweat Bets</h2>
+            <h2>What you get inside the stadium</h2>
             <p>
-              This isn&apos;t a random pick page. NSB is a tight-knit room for bettors
-              who care about long-term ROI and disciplined bankroll strategy.
+              This isn&apos;t a public pick page or a spammy group chat. No Sweat Bets is a tight,
+              well-lit room for bettors who care about long-term ROI, not screenshots.
             </p>
           </header>
 
           <div class="features-grid">
             <article class="feature-card">
-              <h3>Daily picks</h3>
+              <h3>Daily cards with real reasoning</h3>
               <p>
-                Curated cards and props posted before games with clear unit sizes
-                and reasoning so you know exactly why we&apos;re on a side.
+                Curated cards and props posted before games with clear unit sizing and context so you
+                know exactly why we&apos;re on a side – not just what the play is.
               </p>
             </article>
+
             <article class="feature-card">
-              <h3>Live bets</h3>
+              <h3>Live bets when the script flips</h3>
               <p>
-                Real-time reads during the slate. When the game script flips, we
-                react with live entries and hedges – called out in the Discord.
+                Real-time reads during the slate. When the game script changes, we react with live
+                entries and hedges – all called out in the Discord as they happen.
               </p>
             </article>
+
             <article class="feature-card">
-              <h3>Bankroll education</h3>
+              <h3>Bankroll education &amp; structure</h3>
               <p>
-                Learn how to size units, manage swings, and treat betting like a
-                portfolio – not a lottery ticket or a weekend heater.
+                Learn how to size units, manage swings, and treat betting like a portfolio.
+                Frameworks that work whether your unit is $10 or $1,000.
               </p>
             </article>
+
             <article class="feature-card">
-              <h3>Locked-in community</h3>
+              <h3>Locked-in community &amp; sweat threads</h3>
               <p>
-                Active channels with bettors who speak the same language. Slip
-                reviews, sweat threads, and strategy talk all in one place.
+                Channels full of people who speak the same language. Slip reviews, strategy talk, and
+                nightly sweat threads so you never ride a big ticket alone.
               </p>
             </article>
           </div>
         </div>
       </section>
 
+      <!-- Featured win / electric card -->
+      <section class="section section-featured">
+        <div class="container featured-inner">
+          <div class="featured-copy">
+            <h2>Built for heaters – and the nights that keep you in the game.</h2>
+            <p>
+              Big hits are part of the story. The real edge is having a room that stays composed on
+              cold streaks, keeps unit sizing sane, and plays the long season instead of the single
+              slate.
+            </p>
+          </div>
+
+          <div class="featured-card electric-border">
+            <div class="featured-card-inner">
+              <div class="featured-header">
+                <span class="featured-pill">Member slip highlight</span>
+                <span class="featured-tag">$30K+ cashout</span>
+              </div>
+              <p class="featured-body">
+                A VIP member parlayed disciplined unit sizing into a laddered SGP that cleared for
+                over $30,000 on a single night. Same books, same odds – the difference was process
+                and a room that knew when to press.
+              </p>
+              <div class="featured-meta-row">
+                <div class="featured-meta">
+                  <span class="featured-meta-label">Sport</span>
+                  <span class="featured-meta-value">NBA props</span>
+                </div>
+                <div class="featured-meta">
+                  <span class="featured-meta-label">Risked</span>
+                  <span class="featured-meta-value">Smart unit ladder</span>
+                </div>
+                <div class="featured-meta">
+                  <span class="featured-meta-label">Shared in</span>
+                  <span class="featured-meta-value">VIP sweat channel</span>
+                </div>
+              </div>
+              <p class="featured-footnote">
+                Past results don&apos;t guarantee future outcomes. We use these slips to teach discipline
+                – not to sell you a dream.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Plans / Membership -->
-      <section id="plans" class="section">
+      <section id="plans" class="section section-plans">
+        <div class="section-angle section-angle-bottom" aria-hidden="true"></div>
         <div class="container">
           <header class="section-header">
-            <h2>Membership built for how you bet</h2>
+            <h2>Membership that matches your volume</h2>
             <p>
-              Choose the access level that fits your volume and schedule. All
-              plans run through Whop for secure checkout and easy management.
-              No long-term contracts – move between passes as your action changes.
+              Every pass runs through Whop for secure checkout and simple cancellations. No long-term
+              contracts – move between passes as your action changes.
             </p>
           </header>
 
           <div class="plans-grid">
             <article class="plan-card">
-              <div class="plan-label">Quickest Look</div>
+              <div class="plan-label">Quickest look</div>
               <h3>Daily Pass</h3>
               <p>
-                Get in the room for a single day of action. Perfect for testing
-                the waters on a big slate or marquee matchup.
+                Step into the room for a single slate. Perfect for testing the flow on a packed night
+                or marquee matchup.
               </p>
               <ul class="plan-list">
                 <li>Full Discord access for 24 hours</li>
-                <li>All cards and live entries that day</li>
-                <li>See how the community and flow feel</li>
+                <li>All cards, props, and live entries that day</li>
+                <li>See how the community actually moves</li>
               </ul>
               <p class="plan-footnote">Pricing handled via Whop – see checkout for current rates.</p>
               <a
-                class="btn btn-primary btn-block"
+                class="btn btn-secondary btn-block"
                 href="https://whop.com/joined/no-sweat-bets-ef/"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Grab a Daily Pass</a
               >
+                Grab a Daily Pass
+              </a>
             </article>
 
-            <article class="plan-card">
-              <div class="plan-label">Trial Run</div>
+            <article class="plan-card plan-card-featured electric-border">
+              <div class="plan-label plan-label-highlight">Most popular</div>
               <h3>Weekly Pass</h3>
               <p>
-                Lock in for a full week of slates. Ideal for riding a tournament,
-                a homestand, or a packed schedule. Think of this as your trial
-                run to feel a full week inside the room.
+                Lock in for a full week of slates. Ride tournaments, homestands, and busy weekends
+                with the same crew calling out edges.
               </p>
               <ul class="plan-list">
                 <li>7 days of full Discord access</li>
@@ -295,20 +382,21 @@
               </ul>
               <p class="plan-footnote">Actual pricing may vary – check Whop for current weekly rate.</p>
               <a
-                class="btn btn-accent btn-block"
+                class="btn btn-primary btn-block hero-main-cta"
                 href="https://whop.com/joined/no-sweat-bets-ef/"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Get a Weekly Pass</a
               >
+                Get a Weekly Pass
+              </a>
             </article>
 
             <article class="plan-card">
-              <div class="plan-label plan-label-highlight">Most Popular</div>
+              <div class="plan-label">For the full season</div>
               <h3>Monthly Pass</h3>
               <p>
-                For bettors who want to treat this like a business and stay in
-                the mix every day, not just on weekends.
+                For bettors who want to treat this like a business and stay in the mix every day,
+                not just on weekends.
               </p>
               <ul class="plan-list">
                 <li>Month-long Discord access</li>
@@ -317,46 +405,46 @@
               </ul>
               <p class="plan-footnote">Limited to availability. All billing and management via Whop.</p>
               <a
-                class="btn btn-outline btn-block"
+                class="btn btn-secondary btn-block"
                 href="https://whop.com/joined/no-sweat-bets-ef/"
                 target="_blank"
                 rel="noopener noreferrer"
-                >Monthly Pass</a
               >
+                Explore Monthly
+              </a>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- Social Proof / Testimonials -->
-      <section id="testimonials" class="section section-alt">
+      <!-- Social proof / Testimonials -->
+      <section id="testimonials" class="section section-alt section-testimonials">
         <div class="container">
           <header class="section-header">
             <h2>Real members, real slips, real discipline</h2>
             <p>
-              We&apos;re not promising overnight riches. We&apos;re building a room where
-              serious bettors can compound smart decisions over time.
+              We&apos;re not promising overnight riches. We&apos;re building a room where serious bettors
+              can compound smart decisions over time.
             </p>
           </header>
 
           <div class="testimonials-grid">
             <figure class="testimonial-card">
               <blockquote>
-                "Been in a lot of Discords – this is the first one where the team
-                actually explains the why behind the plays. My unit size is dialed
-                in and the swings feel way less stressful."
+                "Been in a lot of Discords – this is the first one where the team actually explains
+                the why behind the plays. My unit size is dialed in and the swings feel way less
+                stressful."
               </blockquote>
               <figcaption>
                 <span class="testimonial-name">M., Chicago</span>
-                <span class="testimonial-meta">NBA & NFL bettor · Member since 2024</span>
+                <span class="testimonial-meta">NBA &amp; NFL bettor · Member since 2024</span>
               </figcaption>
             </figure>
 
             <figure class="testimonial-card">
               <blockquote>
-                "The live calls have been huge. We&apos;ve bailed out of bad numbers and
-                doubled down on great spots because someone in the room is always
-                watching the game flow."
+                "The live calls have been huge. We&apos;ve bailed out of bad numbers and doubled down on
+                great spots because someone in the room is always watching the game flow."
               </blockquote>
               <figcaption>
                 <span class="testimonial-name">J., Dallas</span>
@@ -366,21 +454,19 @@
 
             <figure class="testimonial-card">
               <blockquote>
-                "NSB forced me to treat my roll like a bankroll instead of a
-                checking account. Same books, same sports – completely different
-                results because my process is cleaner."
+                "NSB forced me to treat my roll like a bankroll instead of a checking account. Same
+                books, same sports – completely different results because my process is cleaner."
               </blockquote>
               <figcaption>
                 <span class="testimonial-name">R., New York</span>
-                <span class="testimonial-meta">MLB & UFC bettor · Season Pass holder</span>
+                <span class="testimonial-meta">MLB &amp; UFC bettor · Season Pass holder</span>
               </figcaption>
             </figure>
 
             <figure class="testimonial-card">
               <blockquote>
-                "Even on losing days the Discord feels calm. No chasing, no crazy
-                ladders – just a plan for the next slate. That alone has saved me
-                a ton of money."
+                "Even on losing days the Discord feels calm. No chasing, no crazy ladders – just a
+                plan for the next slate. That alone has saved me a ton of money."
               </blockquote>
               <figcaption>
                 <span class="testimonial-name">T., Phoenix</span>
@@ -392,13 +478,13 @@
       </section>
 
       <!-- FAQ -->
-      <section id="faq" class="section">
+      <section id="faq" class="section section-faq">
         <div class="container">
           <header class="section-header">
             <h2>Frequently asked questions</h2>
             <p>
-              A few quick answers before you hop in. If you still have questions,
-              you can always ask in the Discord once you&apos;re inside.
+              A few quick answers before you hop in. If you still have questions, you can always ask
+              in the Discord once you&apos;re inside.
             </p>
           </header>
 
@@ -406,54 +492,86 @@
             <details class="faq-item" open>
               <summary>What is No Sweat Bets?</summary>
               <p>
-                No Sweat Bets is a private Discord community for sports bettors
-                who want structured picks, live betting opportunities, and
-                smarter bankroll management. We share research, tickets, and
-                strategy – you always control what you bet.
+                No Sweat Bets is a private Discord community for sports bettors who want structured
+                picks, live betting opportunities, and smarter bankroll management. We share
+                research, tickets, and strategy – you always control what you bet.
               </p>
             </details>
+
             <details class="faq-item">
               <summary>How are picks and bets delivered?</summary>
               <p>
-                All plays are posted directly in Discord channels with unit sizes
-                and notes. You&apos;ll see pre-game cards, live entries when edges
-                appear, and occasional long-term futures with clear notation.
+                All plays are posted directly in Discord channels with unit sizes and notes. You&apos;ll
+                see pre-game cards, live entries when edges appear, and occasional long-term futures
+                with clear notation.
               </p>
             </details>
+
             <details class="faq-item">
               <summary>What kind of bankroll do I need?</summary>
               <p>
-                There&apos;s no minimum. We focus on percentage-based unit sizing so
-                the framework works whether your unit is $10 or $1,000. The goal
-                is to protect your roll and compound edges over time, not chase
-                short-term heaters.
+                There&apos;s no minimum. We focus on percentage-based unit sizing so the framework works
+                whether your unit is $10 or $1,000. The goal is to protect your roll and compound
+                edges over time, not chase short-term heaters.
               </p>
             </details>
+
             <details class="faq-item">
               <summary>Do you offer refunds if I don&apos;t profit?</summary>
               <p>
-                We can&apos;t guarantee profit or offer results-based refunds – no
-                one in this space can honestly do that. Memberships are for
-                access to information, education, and community. All payments and
-                terms are handled securely through Whop.
+                We can&apos;t guarantee profit or offer results-based refunds – no one in this space can
+                honestly do that. Memberships are for access to information, education, and
+                community. All payments and terms are handled securely through Whop.
               </p>
             </details>
+
             <details class="faq-item">
               <summary>Is this financial advice or a guarantee?</summary>
               <p>
-                No. Nothing in the Discord or on this site is financial advice or
-                a promise of any specific outcome. You&apos;re responsible for your
-                own bets, limits, and decisions with sportsbooks.
+                No. Nothing in the Discord or on this site is financial advice or a promise of any
+                specific outcome. You&apos;re responsible for your own bets, limits, and decisions with
+                sportsbooks.
               </p>
             </details>
+
             <details class="faq-item">
               <summary>Can I cancel my membership?</summary>
               <p>
-                Yes. Memberships are managed through Whop, where you can review
-                your plan details and handle cancellations or changes according
-                to their terms and timelines.
+                Yes. Memberships are managed through Whop, where you can review your plan details and
+                handle cancellations or changes according to their terms and timelines.
               </p>
             </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section class="section section-final-cta">
+        <div class="container final-cta-inner">
+          <div class="final-cta-copy">
+            <h2>Ready to stop sweating bets alone?</h2>
+            <p>
+              Step into a room where the scoreboard is long-term ROI, not last night&apos;s screenshot.
+              The next slate is already being broken down.
+            </p>
+          </div>
+          <div class="final-cta-actions">
+            <a
+              class="btn btn-primary btn-lg hero-main-cta"
+              href="https://discord.gg/EaHDTP9yes"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Join the Discord
+            </a>
+            <a
+              class="btn btn-outline btn-lg"
+              href="https://whop.com/joined/no-sweat-bets-ef/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View membership passes
+            </a>
           </div>
         </div>
       </section>
@@ -463,15 +581,11 @@
       <div class="container footer-inner">
         <div class="footer-branding">
           <div class="logo footer-logo">
-            <img
-              src="assets/nsb-logo.webp"
-              alt="No Sweat Bets logo"
-              class="logo-image"
-            />
+            <img src="assets/nsb-logo.webp" alt="No Sweat Bets logo" class="logo-image" />
           </div>
           <p class="footer-tagline">
-            No Sweat Bets is an entertainment and education community for sports
-            bettors. We share information – you make your own decisions.
+            No Sweat Bets is an entertainment and education community for sports bettors.
+            We share information – you make your own decisions.
           </p>
 
           <div class="footer-social">
@@ -481,18 +595,8 @@
               rel="noopener noreferrer"
               >Instagram</a
             >
-            <a
-              href="https://x.com/NoSweatBets___"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Twitter / X</a
-            >
-            <a
-              href="https://discord.gg/EaHDTP9yes"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Discord</a
-            >
+            <a href="https://x.com/NoSweatBets___" target="_blank" rel="noopener noreferrer">Twitter / X</a>
+            <a href="https://discord.gg/EaHDTP9yes" target="_blank" rel="noopener noreferrer">Discord</a>
             <a
               href="https://whop.com/joined/no-sweat-bets-ef/"
               target="_blank"
@@ -504,12 +608,10 @@
 
         <div class="footer-meta">
           <p class="disclaimer">
-            Gambling involves risk. Only bet what you can afford to lose. Past
-            performance does not guarantee future results. You must be of legal
-            age to bet on sports in your jurisdiction (typically 21+ in the U.S.,
-            or 18+ where allowed). Check local laws and always gamble
-            responsibly. If you have a gambling problem, call your local
-            helpline.
+            Gambling involves risk. Only bet what you can afford to lose. Past performance does not
+            guarantee future results. You must be of legal age to bet on sports in your jurisdiction
+            (typically 21+ in the U.S., or 18+ where allowed). Check local laws and always gamble
+            responsibly. If you have a gambling problem, call your local helpline.
           </p>
           <p class="footer-copy">
             &copy; <span id="year"></span> No Sweat Bets. All rights reserved.
