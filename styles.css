@@ -317,9 +317,9 @@ body.nav-open .nav-toggle-line:last-child {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("assets/nsb-hero-bg.webp") no-repeat right center;
+  background: url("assets/nsb-hero-bg.jpg") no-repeat right center;
   background-size: cover;
-  opacity: 0.4;
+  opacity: 0.5;
   pointer-events: none;
   z-index: -1;
 }
