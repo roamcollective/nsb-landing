@@ -696,6 +696,40 @@ body.nav-open .nav-toggle-line:last-child {
     #05030a;
 }
 
+/* Recent slips */
+.section-slips {
+  background:
+    radial-gradient(circle at top, rgba(69, 25, 82, 0.35), transparent 60%),
+    #05030a;
+}
+
+.slips-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.slips-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.4rem;
+}
+
+.slip-card {
+  margin: 0;
+  border-radius: 22px;
+  border: 1px solid rgba(103, 80, 140, 0.9);
+  background: rgba(10, 7, 26, 0.98);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.85);
+  overflow: hidden;
+}
+
+.slip-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .featured-inner {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.2fr);
@@ -1199,6 +1233,7 @@ body.nav-open .nav-toggle-line:last-child {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .slips-grid,
   .features-grid,
   .testimonials-grid,
   .faq-grid,
