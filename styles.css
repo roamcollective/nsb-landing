@@ -355,8 +355,9 @@ body.nav-open .nav-toggle-line:last-child {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(140deg, #f39f5a 0%, #ffe3b3 30%, #451952 75%, #05030a 100%);
-  opacity: 0.98;
+    radial-gradient(circle at 75% 20%, rgba(243, 159, 90, 0.28), transparent 55%),
+    linear-gradient(145deg, #05030a 0%, #120f24 50%, #1d1a39 100%);
+  opacity: 0.96;
   pointer-events: none;
   z-index: -2;
 }
