@@ -53,6 +53,26 @@ body {
     #05030a;
 }
 
+@keyframes hero-fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes subtle-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -397,6 +417,12 @@ body.nav-open .nav-toggle-line:last-child {
 
 .hero-copy {
   position: relative;
+  animation: hero-fade-up 0.7s var(--transition-med) forwards;
+}
+
+.hero-stat-line {
+  animation: subtle-fade-in 0.6s ease-out 0.45s forwards;
+  opacity: 0;
 }
 
 .hero-tagline-pill {
@@ -722,6 +748,16 @@ body.nav-open .nav-toggle-line:last-child {
   background: rgba(10, 7, 26, 0.98);
   box-shadow: 0 22px 55px rgba(0, 0, 0, 0.85);
   overflow: hidden;
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.slip-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(244, 152, 81, 0.85);
+  box-shadow: 0 26px 65px rgba(0, 0, 0, 0.9);
 }
 
 .slip-card img {
