@@ -355,10 +355,8 @@ body.nav-open .nav-toggle-line:last-child {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at top right, rgba(243, 159, 90, 0.18), transparent 58%),
-    radial-gradient(circle at bottom left, rgba(102, 37, 73, 0.75), transparent 60%),
-    linear-gradient(145deg, #05030a 0%, #120f24 45%, #1d1a39 100%);
-  opacity: 0.96;
+    linear-gradient(140deg, #f39f5a 0%, #ffe3b3 30%, #451952 75%, #05030a 100%);
+  opacity: 0.98;
   pointer-events: none;
   z-index: -2;
 }
@@ -450,34 +448,25 @@ body.nav-open .nav-toggle-line:last-child {
   align-items: center;
 }
 
-.hero-stats {
-  display: flex;
+.hero-stat-line {
+  display: inline-flex;
   flex-wrap: wrap;
-  gap: 0.7rem;
-}
-
-.hero-stat {
-  min-width: 150px;
-  padding: 0.7rem 0.9rem;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.85rem;
   border-radius: var(--radius-pill);
-  border: 1px solid rgba(86, 64, 122, 0.9);
-  background:
-    radial-gradient(circle at top left, rgba(243, 159, 90, 0.12), transparent 60%),
-    rgba(16, 10, 38, 0.96);
+  background: rgba(16, 10, 38, 0.88);
+  border: 1px solid rgba(243, 159, 90, 0.7);
 }
 
-.hero-stat-label {
-  display: block;
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--muted-soft);
-  margin-bottom: 0.15rem;
+.hero-stat-badge {
+  font-size: 0.8rem;
+  color: var(--muted);
 }
 
-.hero-stat-value {
-  font-family: "Space Grotesk", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 1.1rem;
+.hero-stat-dot {
+  font-size: 0.9rem;
+  color: rgba(243, 159, 90, 0.9);
 }
 
 .hero-social-block {
