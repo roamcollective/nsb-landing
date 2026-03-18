@@ -603,7 +603,7 @@ body.nav-open .nav-toggle-line:last-child {
   color: var(--muted);
 }
 
-/* Electric border utility */
+/* Electric border utility (for featured slip, etc.) */
 
 .electric-border {
   position: relative;
@@ -612,16 +612,49 @@ body.nav-open .nav-toggle-line:last-child {
 .electric-border::before {
   content: "";
   position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background:
+    radial-gradient(circle at 0 0, rgba(255, 227, 179, 0.9), transparent 60%),
+    conic-gradient(from 200deg, #f39f5a, #ea6113, #ae445a, #fbb931, #f39f5a);
+  opacity: 0.9;
+  z-index: -1;
+  filter: drop-shadow(0 0 38px rgba(243, 159, 90, 0.85));
+}
+
+/* Electric orange border for featured plan */
+.electric-border-orange {
+  position: relative;
+}
+
+.electric-border-orange::before {
+  content: "";
+  position: absolute;
   inset: -2px;
   border-radius: inherit;
   background:
-    radial-gradient(circle at 0 0, rgba(255, 227, 179, 0.95), transparent 60%),
-    conic-gradient(from 200deg, #f88f22, #fbb931, #ea6113, #f39f5a, #f88f22);
+    radial-gradient(circle at 0 0, rgba(255, 227, 179, 0.9), transparent 60%),
+    conic-gradient(from 0deg, #fbb931, #f88f22, #ea6113, #f39f5a, #fbb931);
   opacity: 1;
   z-index: -1;
   filter:
-    drop-shadow(0 0 22px rgba(250, 145, 64, 0.9))
-    drop-shadow(0 0 60px rgba(250, 145, 64, 0.75));
+    drop-shadow(0 0 24px rgba(250, 145, 64, 0.95))
+    drop-shadow(0 0 70px rgba(250, 145, 64, 0.8));
+  animation: electric-border-pulse 6s linear infinite;
+}
+
+@keyframes electric-border-pulse {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0.9;
+  }
 }
 
 /* Features */
