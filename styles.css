@@ -375,8 +375,8 @@ body.nav-open .nav-toggle-line:last-child {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to right, rgba(5, 3, 10, 0.94), rgba(5, 3, 10, 0.8) 35%, transparent 70%),
-    url("assets/nsb-field-astronauts.jpg") no-repeat center 170%;
+    linear-gradient(to right, rgba(5, 3, 10, 0.94), rgba(5, 3, 10, 0.82) 35%, transparent 70%),
+    url("assets/nsb-field-astronauts.jpg") no-repeat center 120%;
   background-size: cover;
   opacity: 1;
   pointer-events: none;
