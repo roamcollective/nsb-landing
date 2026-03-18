@@ -305,27 +305,17 @@ body.nav-open .nav-toggle-line:last-child {
 
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
   padding-top: 4.5rem;
   overflow: hidden;
   display: flex;
   align-items: center;
-  background: #000;
+  background:
+    radial-gradient(circle at top left, rgba(0, 255, 65, 0.08), transparent 60%),
+    linear-gradient(to bottom, rgba(2, 6, 23, 0.98), rgba(2, 6, 23, 0.94));
 }
 
-/* Stadium image — full strength */
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("assets/nsb-hero-bg.jpg") no-repeat center center;
-  background-size: cover;
-  opacity: 1;
-  pointer-events: none;
-  z-index: -1;
-}
-
-/* No overlay so the image is fully visible */
+.hero::before,
 .hero::after {
   content: none;
 }
@@ -335,6 +325,50 @@ body.nav-open .nav-toggle-line:last-child {
   grid-template-columns: minmax(0, 1.2fr);
   gap: 3rem;
   align-items: center;
+}
+
+/* Gemini banner below hero */
+.nsb-banner {
+  position: relative;
+  padding: 0;
+}
+
+.nsb-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.nsb-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(2, 6, 23, 0.9), transparent 55%);
+}
+
+.nsb-banner-inner {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  padding: 3rem 1.5rem;
+}
+
+.nsb-banner-text {
+  max-width: 1120px;
+  margin: 0 auto;
+  color: #e5e7eb;
+}
+
+.nsb-banner-text h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.6rem;
+  letter-spacing: -0.03em;
+}
+
+.nsb-banner-text p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
 }
 
 .hero-copy {
